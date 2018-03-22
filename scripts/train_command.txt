@@ -35,12 +35,9 @@ tensorboard --logdir=/Users/luke/Documents/dev/github/milkplz/keras-retinanet/lo
 # Local
 
 python keras_retinanet/bin/train.py \
---batch-size 1 --epochs 2 --steps 2 \
---snapshot-path /Users/luke/Documents/ml_models \
---snapshot /Users/luke/Documents/ml_models/deep/resnet50_csv_epoch_50_loss_0.90363.h5 \
-csv dataset/deepfashion/test_instances_val2017.csv \
-dataset/deepfashion/categories2017.csv \
---val-annotations dataset/deepfashion/instances_val2017.csv
+--batch-size 1 --epochs 1 --steps 100 \
+--snapshot-path /Users/luke/Documents/ml_models/videotag \
+coco /Users/luke/Documents/ml_datasets/new/videotag
 
 # Server
 
